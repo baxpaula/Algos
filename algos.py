@@ -24,3 +24,14 @@ def listSum(listInput):
     return sum
 print(listSum([1,2,3]))
 
+#reverse an array
+# Example [1,2,3,4] returns [4,3,2,1]
+
+def reverseList(listInput):
+    for i in range(len(listInput)//2):
+        temp = listInput[i]
+        listInput[i] = listInput[-1-i]
+        listInput[-1-i] = temp
+    return listInput
+print(reverseList([4,3,2,1]))
+
